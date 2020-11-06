@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        style="@style/BaseCardViewStyle"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/elevation_small"
+        app:cardElevation="@dimen/elevation_extra_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_large">
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/CheckBoxTextStyle"
+                android:text="@string/rtl_text"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/rtlCheckbox"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/rtlCheckbox"
+                style="@style/CheckBoxStyle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvMainTitle"
+                style="@style/ColorChangeTitleStyle"
+                android:text="@string/main_theme"
+                app:layout_constraintTop_toBottomOf="@+id/rtlCheckbox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnMainTheme"/>
+
+            <TextView
+                android:id="@+id/tvMainSubtitle"
+                style="@style/ColorChangeSubtitleStyle"
+                android:text="@string/blue_green"
+                app:layout_constraintTop_toBottomOf="@+id/tvMainTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnMainTheme"/>
+
+            <Button
+                android:id="@+id/btnMainTheme"
+                android:text="@string/activate"
+                style="@style/ButtonDarkStyle"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                app:layout_constraintTop_toBottomOf="@+id/rtlCheckbox"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPurpleTitle"
+                style="@style/ColorChangeTitleStyle"
+                android:text="@string/purple"
+                app:layout_constraintTop_toBottomOf="@+id/tvMainSubtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnMainTheme"/>
+
+            <TextView
+                android:id="@+id/tvPurpleSubtitle"
+                style="@style/ColorChangeSubtitleStyle"
+                android:text="@string/purple_orange"
+                app:layout_constraintTop_toBottomOf="@+id/tvPurpleTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnMainTheme"/>
+
+            <Button
+                android:id="@+id/btnPurpleTheme"
+                android:text="@string/activate"
+                style="@style/ButtonDarkStyle"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                app:layout_constraintTop_toBottomOf="@+id/tvMainSubtitle"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvOrangeTitle"
+                style="@style/ColorChangeTitleStyle"
+                android:text="@string/orange"
+                app:layout_constraintTop_toBottomOf="@+id/tvPurpleSubtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnOrangeTheme"/>
+
+            <TextView
+                android:id="@+id/tvOrangeSubtitle"
+                style="@style/ColorChangeSubtitleStyle"
+                android:text="@string/orange_blue"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrangeTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnOrangeTheme"/>
+
+            <Button
+                android:id="@+id/btnOrangeTheme"
+                android:text="@string/activate"
+                style="@style/ButtonDarkStyle"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                app:layout_constraintTop_toBottomOf="@+id/tvPurpleSubtitle"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTealTitle"
+                style="@style/ColorChangeTitleStyle"
+                android:text="@string/teal"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrangeSubtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnTealTheme"/>
+
+            <TextView
+                android:id="@+id/tvTealSubtitle"
+                style="@style/ColorChangeSubtitleStyle"
+                android:text="@string/teal_orange"
+                app:layout_constraintTop_toBottomOf="@+id/tvTealTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnTealTheme"/>
+
+            <Button
+                android:id="@+id/btnTealTheme"
+                android:text="@string/activate"
+                style="@style/ButtonDarkStyle"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrangeSubtitle"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvRedTitle"
+                style="@style/ColorChangeTitleStyle"
+                android:text="@string/red"
+                app:layout_constraintTop_toBottomOf="@+id/tvTealSubtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnRedTheme"/>
+
+            <TextView
+                android:id="@+id/tvRedSubtitle"
+                style="@style/ColorChangeSubtitleStyle"
+                android:text="@string/red_pink"
+                app:layout_constraintTop_toBottomOf="@+id/tvRedTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnRedTheme"/>
+
+            <Button
+                android:id="@+id/btnRedTheme"
+                android:text="@string/activate"
+                style="@style/ButtonDarkStyle"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                app:layout_constraintTop_toBottomOf="@+id/tvTealSubtitle"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvGreenTitle"
+                style="@style/ColorChangeTitleStyle"
+                android:text="@string/green"
+                app:layout_constraintTop_toBottomOf="@+id/tvRedSubtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnGreenTheme"/>
+
+            <TextView
+                android:id="@+id/tvGreenSubtitle"
+                style="@style/ColorChangeSubtitleStyle"
+                android:text="@string/green_orange"
+                app:layout_constraintTop_toBottomOf="@+id/tvGreenTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnGreenTheme"/>
+
+            <Button
+                android:id="@+id/btnGreenTheme"
+                android:text="@string/activate"
+                style="@style/ButtonDarkStyle"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                app:layout_constraintTop_toBottomOf="@+id/tvRedSubtitle"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

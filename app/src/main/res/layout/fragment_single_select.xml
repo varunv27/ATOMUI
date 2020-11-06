@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cityParent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_card_height"
+        android:layout_margin="@dimen/margin_extra_extra_large"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/elevation_small"
+        app:cardElevation="@dimen/elevation_extra_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/padding_extra_large"
+            android:paddingEnd="0dp">
+
+            <TextView
+                style="@style/HomeSubtitleStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/city"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCityResult"
+                style="@style/HomeSubtitleStyle"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorTextDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/citySpinner"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="New york" />
+
+            <ImageView
+                android:id="@+id/citySpinner"
+                style="@style/HomeSubtitleStyle"
+                android:src="@drawable/ic_arrow_drop_down"
+                android:padding="@dimen/padding_normal"
+                android:layout_width="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_card_height"
+        android:layout_marginStart="@dimen/margin_extra_extra_large"
+        android:layout_marginEnd="@dimen/margin_extra_extra_large"
+        android:layout_marginBottom="@dimen/margin_extra_extra_large"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/elevation_small"
+        app:cardElevation="@dimen/elevation_extra_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/padding_extra_large"
+            android:paddingEnd="0dp">
+
+            <TextView
+                style="@style/HomeSubtitleStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/country"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/countrySpinner"
+                style="@style/HomeSubtitleStyle"
+                android:layout_width="wrap_content"
+                android:gravity="end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_card_height"
+        android:layout_marginStart="@dimen/margin_extra_extra_large"
+        android:layout_marginEnd="@dimen/margin_extra_extra_large"
+        android:layout_marginBottom="@dimen/margin_extra_extra_large"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/elevation_small"
+        app:cardElevation="@dimen/elevation_extra_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/addressParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/padding_extra_large"
+            android:paddingEnd="0dp">
+
+            <TextView
+                style="@style/HomeSubtitleStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/address"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvAddressResult"
+                style="@style/HomeSubtitleStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/choose_address"
+                android:textColor="@color/colorTextDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/addressSpinner"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/addressSpinner"
+                style="@style/HomeSubtitleStyle"
+                android:src="@drawable/ic_arrow_drop_down"
+                android:padding="@dimen/padding_normal"
+                android:layout_width="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_card_height"
+        android:layout_marginStart="@dimen/margin_extra_extra_large"
+        android:layout_marginEnd="@dimen/margin_extra_extra_large"
+        android:layout_marginBottom="@dimen/margin_extra_extra_large"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/elevation_small"
+        app:cardElevation="@dimen/elevation_extra_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/padding_extra_large"
+            android:paddingEnd="0dp">
+
+            <TextView
+                style="@style/HomeSubtitleStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/monthSpinner"
+                style="@style/HomeSubtitleStyle"
+                android:layout_width="wrap_content"
+                android:gravity="end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/yearSpinner"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/yearSpinner"
+                style="@style/HomeSubtitleStyle"
+                android:layout_width="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseCardViewStyle"
+    app:cardCornerRadius="@dimen/elevation_small"
+    app:cardElevation="@dimen/elevation_extra_small"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clParent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wizard_social_item_height">
+
+        <ImageView
+            android:id="@+id/ivItemBg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wizard_social_item_image_height"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/image_desc_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/card_styled_bg_2" />
+
+        <TextView
+            android:id="@+id/tvItemSubtitle"
+            style="@style/CardStyledTwoSubtitle"
+            android:layout_marginStart="@dimen/margin_extra_extra_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_extra_extra_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivItemBg"
+            tools:text="ART AND DESIGN" />
+
+        <TextView
+            android:id="@+id/tvItemTitle"
+            style="@style/CardStyledTwoTitle"
+            android:layout_marginStart="@dimen/margin_extra_extra_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_extra_extra_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemSubtitle"
+            tools:text="A New Design Model That Helps People Change Their Lives" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorDivider"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemTitle" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="@dimen/padding_large"
+            android:paddingBottom="@dimen/padding_large"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/imageAvatar"
+                style="@style/AvatarListStyle"
+                android:layout_marginStart="@dimen/margin_extra_extra_large"
+                android:contentDescription="@string/image_desc_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/avatar_1" />
+
+            <TextView
+                android:id="@+id/textName"
+                style="@style/ItemTitleStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/margin_extra_large"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:textSize="@dimen/text_size_regular"
+                app:layout_constraintEnd_toStartOf="@+id/btnFollowing"
+                app:layout_constraintStart_toEndOf="@+id/imageAvatar"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Phillip Melendez" />
+
+            <TextView
+                android:id="@+id/textArticles"
+                style="@style/CardStyledItemSubtitle"
+                android:layout_marginStart="@dimen/margin_extra_large"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnFollowing"
+                app:layout_constraintStart_toEndOf="@+id/imageAvatar"
+                app:layout_constraintTop_toBottomOf="@+id/textName"
+                tools:text="email1@gmail.com" />
+
+            <Button
+                android:id="@+id/btnFollowing"
+                style="@style/CardStyledTwoButton"
+                android:layout_marginEnd="@dimen/margin_extra_extra_large"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

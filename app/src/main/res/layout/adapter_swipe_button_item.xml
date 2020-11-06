@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><!-- NOTE: should use FrameLayout or RelativeLayout for parent of the "@id/container" view-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/group_item_height"
+    android:clipToPadding="false"
+    android:outlineProvider="bounds"
+    android:layout_marginStart="@dimen/margin_extra_large"
+    android:layout_marginEnd="@dimen/margin_extra_large"
+    android:layout_marginTop="@dimen/margin_extra_large"
+    android:elevation="@dimen/elevation_extra_small">
+
+    <LinearLayout
+        android:id="@+id/behind_views"
+        style="@style/SwipeButtonParentStyle"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/btnMessage"
+            android:text="@string/list_button_text_1"
+            style="@style/ButtonDarkStyle"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:clipToPadding="false"
+        android:outlineProvider="bounds">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageAvatar"
+                style="@style/AvatarListStyle"
+                android:layout_marginStart="@dimen/margin_extra_large"
+                android:contentDescription="@string/image_desc_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/avatar_1" />
+
+            <TextView
+                android:id="@+id/textName"
+                style="@style/ItemTitleStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/margin_extra_extra_large"
+                app:layout_constraintStart_toEndOf="@+id/imageAvatar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="Phillip Melendez" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</FrameLayout>

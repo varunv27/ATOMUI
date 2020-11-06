@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseCardViewStyle"
+    app:cardCornerRadius="@dimen/elevation_small"
+    app:cardElevation="@dimen/elevation_extra_small"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clParent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wizard_profile_item_height">
+
+        <ImageView
+            android:id="@+id/ivAvatarItem"
+            android:layout_width="@dimen/wizard_profile_avatar_size"
+            android:layout_height="@dimen/wizard_profile_avatar_size"
+            android:layout_marginTop="@dimen/margin_ultra_large"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@drawable/avatar_1"/>
+
+        <TextView
+            android:id="@+id/tvItemTitle"
+            style="@style/WizardProfileTitleStyle"
+            android:layout_marginStart="@dimen/margin_extra_extra_large"
+            android:layout_marginTop="@dimen/margin_extra_extra_large"
+            android:layout_marginEnd="@dimen/margin_extra_extra_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivAvatarItem"
+            tools:text="ART AND DESIGN" />
+
+        <TextView
+            android:id="@+id/tvItemSubtitle"
+            style="@style/WizardProfileSubtitleStyle"
+            android:layout_marginStart="@dimen/margin_extra_extra_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_extra_extra_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemTitle"
+            tools:text="A New Design Model That Helps People Change Their Lives" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemSubtitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/margin_extra_extra_large"
+            android:gravity="center|top">
+
+            <Button
+                android:id="@+id/btnFollow"
+                style="@style/WizardProfileFollowButtonStyle"/>
+
+            <Button
+                android:id="@+id/btnMessage"
+                style="@style/WizardProfileMessageButtonStyle"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

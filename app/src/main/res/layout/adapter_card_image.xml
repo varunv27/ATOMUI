@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseCardViewStyle"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="@dimen/margin_large"
+    android:layout_marginBottom="@dimen/margin_large"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="@dimen/elevation_small">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivItemBg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_image_height"
+            android:adjustViewBounds="false"
+            android:contentDescription="@null"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            tools:background="@drawable/img_bg_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvItemTitle"
+                style="@style/CardImageTitle"
+                android:layout_marginStart="@dimen/margin_extra_extra_large"
+                android:layout_marginEnd="@dimen/margin_extra_extra_large"
+                android:layout_marginBottom="@dimen/margin_normal"
+                tools:text="Plastic Glass" />
+
+            <TextView
+                android:id="@+id/tvItemSubtitle"
+                style="@style/CardImageSubTitle"
+                android:layout_marginStart="@dimen/margin_extra_extra_large"
+                android:layout_marginEnd="@dimen/margin_extra_extra_large"
+                tools:text="$9.95" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

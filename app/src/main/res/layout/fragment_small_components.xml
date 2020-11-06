@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorBackground">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_extra_large"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/elevation_small"
+            app:cardElevation="@dimen/elevation_extra_small">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTitle1"
+                    style="@style/SmallComponentsTitle"
+                    android:text="@string/small_size"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnSmallSize1"
+                    style="@style/SmallSizeButtonStyle"
+                    android:background="@drawable/rounded_button_primary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle1"/>
+
+                <Button
+                    android:id="@+id/btnSmallSize2"
+                    style="@style/SmallSizeButtonStyle"
+                    android:background="@drawable/rounded_button_blue_two"
+                    app:layout_constraintStart_toEndOf="@+id/btnSmallSize1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle1"/>
+
+                <Button
+                    android:id="@+id/btnSmallSize3"
+                    style="@style/SmallSizeButtonStyle"
+                    android:background="@drawable/rounded_button_dark"
+                    app:layout_constraintStart_toEndOf="@+id/btnSmallSize2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle1"/>
+
+                <Button
+                    android:id="@+id/btnSmallSize4"
+                    style="@style/SmallSizeButtonStyle"
+                    android:background="@drawable/rounded_button_gray"
+                    app:layout_constraintStart_toEndOf="@+id/btnSmallSize3"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle1"/>
+
+                <TextView
+                    android:id="@+id/tvTitle2"
+                    style="@style/SmallComponentsTitle"
+                    android:text="@string/medium_size"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@id/btnSmallSize1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnMediumSize1"
+                    style="@style/MediumSizeButtonStyle"
+                    android:background="@drawable/rounded_button_primary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle2"/>
+
+                <Button
+                    android:id="@+id/btnMediumSize2"
+                    style="@style/MediumSizeButtonStyle"
+                    android:background="@drawable/rounded_button_blue_two"
+                    app:layout_constraintStart_toEndOf="@+id/btnMediumSize1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle2"/>
+
+                <Button
+                    android:id="@+id/btnMediumSize3"
+                    style="@style/MediumSizeButtonStyle"
+                    android:background="@drawable/rounded_button_dark"
+                    app:layout_constraintStart_toEndOf="@+id/btnMediumSize2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle2"/>
+
+                <Button
+                    android:id="@+id/btnMediumSize4"
+                    style="@style/MediumSizeButtonStyle"
+                    android:background="@drawable/rounded_button_gray"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnMediumSize1"/>
+
+                <TextView
+                    android:id="@+id/tvTitle3"
+                    style="@style/SmallComponentsTitle"
+                    android:text="@string/block"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@id/btnMediumSize4"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnBlock"
+                    style="@style/BlockButtonStyle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle3"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_extra_large"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/elevation_small"
+            app:cardElevation="@dimen/elevation_extra_small">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTitle4"
+                    style="@style/SmallComponentsTitle"
+                    android:text="@string/rounded_small_size"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnRoundedSmallSize1"
+                    style="@style/SmallSizeButtonStyle"
+                    android:background="@drawable/rounded_button_primary_two"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle4"/>
+
+                <Button
+                    android:id="@+id/btnRoundedSmallSize2"
+                    style="@style/SmallSizeButtonStyle"
+                    android:background="@drawable/rounded_button_blue"
+                    app:layout_constraintStart_toEndOf="@+id/btnRoundedSmallSize1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle4"/>
+
+                <Button
+                    android:id="@+id/btnRoundedSmallSize3"
+                    style="@style/SmallSizeButtonStyle"
+                    android:background="@drawable/rounded_button_dark_two"
+                    app:layout_constraintStart_toEndOf="@+id/btnRoundedSmallSize2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle4"/>
+
+                <Button
+                    android:id="@+id/btnRoundedSmallSize4"
+                    style="@style/SmallSizeButtonStyle"
+                    android:background="@drawable/rounded_button_gray_two"
+                    app:layout_constraintStart_toEndOf="@+id/btnRoundedSmallSize3"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle4"/>
+
+                <TextView
+                    android:id="@+id/tvTitle5"
+                    style="@style/SmallComponentsTitle"
+                    android:text="@string/rounded_medium_size"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@id/btnRoundedSmallSize1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnRoundedMediumSize1"
+                    style="@style/MediumSizeButtonStyle"
+                    android:background="@drawable/rounded_button_primary_two"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle5"/>
+
+                <Button
+                    android:id="@+id/btnRoundedMediumSize2"
+                    style="@style/MediumSizeButtonStyle"
+                    android:background="@drawable/rounded_button_blue"
+                    app:layout_constraintStart_toEndOf="@+id/btnRoundedMediumSize1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle5"/>
+
+                <Button
+                    android:id="@+id/btnRoundedMediumSize3"
+                    style="@style/MediumSizeButtonStyle"
+                    android:background="@drawable/rounded_button_dark_two"
+                    app:layout_constraintStart_toEndOf="@+id/btnRoundedMediumSize2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle5"/>
+
+                <Button
+                    android:id="@+id/btnRoundedMediumSize4"
+                    style="@style/MediumSizeButtonStyle"
+                    android:background="@drawable/rounded_button_gray_two"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRoundedMediumSize1"/>
+
+                <TextView
+                    android:id="@+id/tvTitle6"
+                    style="@style/SmallComponentsTitle"
+                    android:text="@string/block"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@id/btnRoundedMediumSize4"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnBlock2"
+                    style="@style/BlockButtonStyle"
+                    android:background="@drawable/rounded_button_blue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle6"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_extra_large"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/elevation_small"
+            app:cardElevation="@dimen/elevation_extra_small">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTitle7"
+                    style="@style/SmallComponentsTitle"
+                    android:text="@string/basic_chips"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tag1"
+                    style="@style/SmallComponentsTagStyle"
+                    android:text="@string/default_button"
+                    android:background="@drawable/rounded_tag_bg_gray"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle7"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tag2"
+                    style="@style/SmallComponentsTagStyle"
+                    android:text="@string/list_button_text_2"
+                    android:background="@drawable/rounded_tag_bg_green"
+                    android:drawableStart="@drawable/ic_check_circle_white"
+                    android:drawablePadding="@dimen/padding_small"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle7"
+                    app:layout_constraintStart_toEndOf="@+id/tag1"/>
+
+                <TextView
+                    android:id="@+id/tag3"
+                    style="@style/SmallComponentsTagStyle"
+                    android:text="@string/example_name"
+                    android:background="@drawable/rounded_tag_bg_dark_blue"
+                    android:drawableStart="@drawable/ic_avatar_disc_jockey"
+                    android:drawablePadding="@dimen/padding_small"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle7"
+                    app:layout_constraintStart_toEndOf="@+id/tag2"/>
+
+                <TextView
+                    android:id="@+id/tvTitle8"
+                    style="@style/SmallComponentsTitle"
+                    android:text="@string/color_chips"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tag1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tag4"
+                    style="@style/SmallComponentsTagStyle"
+                    android:text="@string/example_name"
+                    android:textColor="?attr/colorBgPrimary"
+                    android:background="@drawable/rounded_tag_small_components_3"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle8"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tag5"
+                    style="@style/SmallComponentsTagStyle"
+                    android:text="@string/secondary"
+                    android:textColor="?attr/colorButtonPrimary"
+                    android:background="@drawable/rounded_tag_small_components_2"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle8"
+                    app:layout_constraintStart_toEndOf="@+id/tag4"/>
+
+                <TextView
+                    android:id="@+id/tag6"
+                    style="@style/SmallComponentsTagStyle"
+                    android:text="@string/tertiary"
+                    android:textColor="@color/colorTagText1"
+                    android:background="@drawable/rounded_tag_bg_1"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle8"
+                    app:layout_constraintStart_toEndOf="@+id/tag5"/>
+
+                <TextView
+                    android:id="@+id/tvTitle9"
+                    style="@style/SmallComponentsTitle"
+                    android:text="@string/outline_chips"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tag5"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tag7"
+                    style="@style/SmallComponentsTagStyle"
+                    android:text="@string/example_name"
+                    android:textColor="?attr/colorBgPrimary"
+                    android:background="@drawable/rounded_tag_outline_blue"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle9"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tag8"
+                    style="@style/SmallComponentsTagStyle"
+                    android:text="@string/secondary"
+                    android:textColor="?attr/colorButtonPrimary"
+                    android:background="@drawable/rounded_tag_outline_green"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle9"
+                    app:layout_constraintStart_toEndOf="@+id/tag7"/>
+
+                <TextView
+                    android:id="@+id/tag9"
+                    style="@style/SmallComponentsTagStyle"
+                    android:text="@string/tertiary"
+                    android:textColor="@color/colorTagText1"
+                    android:background="@drawable/rounded_tag_outline_dark_blue"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle9"
+                    app:layout_constraintStart_toEndOf="@+id/tag8"/>
+
+                <TextView
+                    android:id="@+id/tvTitle10"
+                    style="@style/SmallComponentsTitle"
+                    android:text="@string/icon_chips"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tag7"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tag10"
+                    style="@style/SmallComponentsTagStyle"
+                    android:text="@string/icon_chips_time"
+                    android:textColor="?attr/colorButtonPrimary"
+                    android:background="@drawable/rounded_tag_outline_green"
+                    android:drawableStart="@drawable/ic_time_green"
+                    android:drawableEnd="@drawable/ic_close_circle"
+                    android:drawablePadding="@dimen/padding_small"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tag11"
+                    style="@style/SmallComponentsTagStyle"
+                    android:text="@string/icon_chips_location"
+                    android:textColor="@color/colorTagText1"
+                    android:background="@drawable/rounded_tag_outline_dark_blue"
+                    android:drawableStart="@drawable/ic_pin_blue"
+                    android:drawableEnd="@drawable/ic_close_circle"
+                    android:drawablePadding="@dimen/padding_small"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle10"
+                    app:layout_constraintStart_toEndOf="@+id/tag10"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

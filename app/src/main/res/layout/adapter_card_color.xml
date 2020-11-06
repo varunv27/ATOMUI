@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseCardViewStyle"
+    app:cardCornerRadius="@dimen/elevation_small"
+    app:cardElevation="@dimen/elevation_extra_small"
+    app:cardUseCompatPadding="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_color_item_height">
+
+        <ImageView
+            android:id="@+id/ivItemBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorCardBgDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvItemSubtitle"
+                style="@style/CardColorSubTitle"
+                android:layout_marginStart="@dimen/margin_extra_extra_large"
+                android:layout_marginEnd="@dimen/margin_extra_extra_large"
+                android:layout_marginBottom="@dimen/margin_large"
+                tools:text="ART AND DESIGN"/>
+
+            <TextView
+                android:id="@+id/tvItemTitle"
+                style="@style/CardColorTitle"
+                android:layout_marginStart="@dimen/margin_extra_extra_large"
+                android:layout_marginEnd="@dimen/margin_extra_extra_large"
+                android:layout_marginBottom="@dimen/margin_extra_extra_large"
+                tools:text="A New Design Model That Helps People Change Their Lives" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvItemComments"
+                    style="@style/CardColorItem"
+                    android:drawableStart="@drawable/ic_comment_white"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:drawablePadding="@dimen/padding_normal"
+                    tools:text="67"/>
+
+                <ImageView
+                    android:id="@+id/ivLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_heart_white"
+                    android:layout_marginStart="@dimen/margin_extra_large"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemComments"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSubtitle"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvItemLikes"
+                    style="@style/CardColorItem"
+                    android:layout_marginStart="@dimen/padding_normal"
+                    app:layout_constraintStart_toEndOf="@+id/ivLike"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:text="718" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

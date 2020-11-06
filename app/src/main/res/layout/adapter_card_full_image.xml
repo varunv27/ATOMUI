@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseCardViewStyle"
+    app:cardCornerRadius="@dimen/elevation_small"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/elevation_extra_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_full_image_item_height">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/ivItemBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/image_desc_bg"
+                tools:background="@drawable/card_full_image_1"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/image_desc_bg"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvItemSubtitle"
+            style="@style/CardFullImageSubtitle"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_extra_extra_large"
+            android:layout_marginEnd="@dimen/margin_extra_extra_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvItemTitle"
+            tools:text="ART AND DESIGN"/>
+
+        <TextView
+            android:id="@+id/tvItemTitle"
+            style="@style/CardFullImageTitle"
+            android:layout_marginBottom="@dimen/margin_extra_extra_large"
+            android:layout_marginStart="@dimen/margin_extra_extra_large"
+            android:layout_marginEnd="@dimen/margin_extra_extra_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/llParent"
+            tools:text="A New Design Model That Helps People Change Their Lives"/>
+
+        <LinearLayout
+            android:id="@+id/llParent"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="@dimen/margin_extra_extra_large"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnReadMore"
+                style="@style/CardFullImageButton"/>
+
+            <TextView
+                android:id="@+id/tvItemComments"
+                style="@style/CardFullImageItem"
+                android:drawableStart="@drawable/ic_comment_white"
+                android:layout_marginStart="@dimen/margin_large"
+                android:drawablePadding="@dimen/padding_normal"
+                tools:text="67"/>
+
+            <ImageView
+                android:id="@+id/ivLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_heart_white"
+                android:contentDescription="@string/image_desc_icon"
+                android:layout_marginStart="@dimen/margin_extra_large"/>
+
+            <TextView
+                android:id="@+id/tvItemLikes"
+                style="@style/CardFullImageItem"
+                android:layout_marginStart="@dimen/padding_normal"
+                tools:text="718" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

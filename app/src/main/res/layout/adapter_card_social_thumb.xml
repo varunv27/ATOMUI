@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseCardViewStyle"
+    app:cardCornerRadius="@dimen/elevation_small"
+    app:cardElevation="@dimen/elevation_extra_small"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_large">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_desc_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/img_bg_1" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/CardShoppingCartTitle"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginStart="@dimen/margin_extra_large"
+            app:layout_constraintStart_toEndOf="@+id/ivAvatar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Phillip Melendez" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            style="@style/CardShoppingCartSubTitle"
+            android:layout_marginStart="@dimen/margin_extra_large"
+            android:layout_marginTop="@dimen/margin_normal"
+            app:layout_constraintStart_toEndOf="@+id/ivAvatar"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintBottom_toTopOf="@+id/tvItemComments"
+            tools:text="email1@gmail.com" />
+
+        <TextView
+            android:id="@+id/tvItemComments"
+            style="@style/CardStyledIconText"
+            android:layout_marginStart="@dimen/margin_extra_large"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:drawableStart="@drawable/ic_comment"
+            android:drawablePadding="@dimen/padding_normal"
+            app:layout_constraintStart_toEndOf="@+id/ivAvatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="67" />
+
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_heart"
+            android:layout_marginStart="@dimen/margin_extra_large"
+            android:layout_marginBottom="@dimen/margin_normal"
+            app:layout_constraintStart_toEndOf="@+id/tvItemComments"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubtitle"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvItemLikes"
+            style="@style/CardStyledIconText"
+            android:layout_marginStart="@dimen/padding_normal"
+            android:layout_marginBottom="@dimen/margin_normal"
+            app:layout_constraintStart_toEndOf="@+id/ivLike"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="718" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
